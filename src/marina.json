@@ -1,0 +1,50 @@
+{
+  "docks": [
+    {
+      "id": "north",
+      "name": "北栈桥",
+      "line": [
+        [7.42155, 43.73522],
+        [7.42615, 43.73508]
+      ],
+      "labelSide": -1
+    },
+    {
+      "id": "south",
+      "name": "南栈桥",
+      "line": [
+        [7.42215, 43.73392],
+        [7.42635, 43.73378]
+      ],
+      "labelSide": 1
+    }
+  ],
+  "berths": [
+    { "id": "N-01", "dockId": "north", "name": "N-01", "alongM": 40, "side": 1 },
+    { "id": "N-02", "dockId": "north", "name": "N-02", "alongM": 57, "side": 1 },
+    { "id": "N-03", "dockId": "north", "name": "N-03", "alongM": 73, "side": 1 },
+    { "id": "N-04", "dockId": "north", "name": "N-04", "alongM": 88, "side": 1 },
+    { "id": "N-05", "dockId": "north", "name": "N-05", "alongM": 102, "side": 1 },
+    { "id": "N-06", "dockId": "north", "name": "N-06", "alongM": 115, "side": 1 },
+    { "id": "S-01", "dockId": "south", "name": "S-01", "alongM": 50, "side": -1 },
+    { "id": "S-02", "dockId": "south", "name": "S-02", "alongM": 66, "side": -1 },
+    { "id": "S-03", "dockId": "south", "name": "S-03", "alongM": 81, "side": -1 },
+    { "id": "S-04", "dockId": "south", "name": "S-04", "alongM": 95, "side": -1 },
+    { "id": "S-11", "dockId": "south", "name": "S-11", "alongM": 168, "side": 1 },
+    { "id": "S-12", "dockId": "south", "name": "S-12", "alongM": 182, "side": 1 }
+  ],
+  "yachts": [
+    { "id": "n1", "name": "北风", "berthId": "N-01", "loa": 60, "beam": 10, "color": "#1d4e66" },
+    { "id": "n2", "name": "澄海", "berthId": "N-02", "loa": 42, "beam": 8.2, "color": "#245a48" },
+    { "id": "n3", "name": "Arcadia", "berthId": "N-03", "loa": 36, "beam": 7.4, "color": "#3d4a62" },
+    { "id": "n4", "name": "白礁", "berthId": "N-04", "loa": 28, "beam": 6.4, "color": "#5c4632" },
+    { "id": "n5", "name": "Lumen", "berthId": "N-05", "loa": 24, "beam": 5.6, "color": "#1f3d5c" },
+    { "id": "n6", "name": "小岛", "berthId": "N-06", "loa": 18, "beam": 4.8, "color": "#3e5344" },
+    { "id": "s1", "name": "南针", "berthId": "S-01", "loa": 48, "beam": 9, "color": "#1d4e66" },
+    { "id": "s2", "name": "暮潮", "berthId": "S-02", "loa": 33, "beam": 7, "color": "#5a3d45" },
+    { "id": "s3", "name": "Calma", "berthId": "S-03", "loa": 27, "beam": 6.2, "color": "#2c4a44" },
+    { "id": "s4", "name": "岸线", "berthId": "S-04", "loa": 22, "beam": 5.4, "color": "#3d4a62" },
+    { "id": "s5", "name": "拾光", "berthId": "S-11", "loa": 20, "beam": 5.2, "color": "#3e5344" },
+    { "id": "s6", "name": "短缆", "berthId": "S-12", "loa": 16, "beam": 4.6, "color": "#5c4632" }
+  ]
+}

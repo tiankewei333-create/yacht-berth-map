@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/

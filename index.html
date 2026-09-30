@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>游艇展位图</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <aside class="panel">
+      <p class="kicker">MapLibre · 演示</p>
+      <h1>游艇展位图</h1>
+      <p class="lead">每个泊位写明沿码头的米数和停靠侧。船头垂直于码头，船体按船长船宽收成尖头。</p>
+      <ul id="list"></ul>
+      <p class="hint">拖拽平移，右键拖拽旋转和俯仰，滚轮缩放。船会留在原来的泊位上。</p>
+    </aside>
+    <section class="card" id="card" hidden>
+      <p class="kicker" id="card-berth"></p>
+      <h2 id="card-name"></h2>
+      <p id="card-size"></p>
+      <button type="button" id="card-close">关闭</button>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

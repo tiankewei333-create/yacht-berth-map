@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "游艇展位图",
+    "slug": "yacht-berth-map",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": ["@maplibre/maplibre-react-native"],
+    "android": { "package": "com.yachtberth.map" },
+    "ios": { "bundleIdentifier": "com.yachtberth.map" }
+  }
+}

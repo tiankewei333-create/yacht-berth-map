@@ -1,0 +1,100 @@
+:root {
+  --paper: #f3efe6;
+  --ink: #1a1814;
+  --muted: #6c655c;
+  --line: rgba(26, 24, 20, 0.14);
+  --water: #16384a;
+  color: var(--ink);
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+  font-size: 15px;
+}
+
+* { box-sizing: border-box; }
+html, body, #map { margin: 0; height: 100%; }
+#map { position: fixed; inset: 0; }
+
+.panel {
+  position: fixed;
+  z-index: 2;
+  top: 14px;
+  left: 14px;
+  width: min(320px, calc(100vw - 28px));
+  max-height: calc(100vh - 28px);
+  overflow: auto;
+  background: rgba(243, 239, 230, 0.94);
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.1rem 0.9rem;
+  backdrop-filter: blur(8px);
+}
+.kicker {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+h1, h2 { font-family: Palatino, "Iowan Old Style", "Songti SC", serif; font-weight: 500; letter-spacing: -0.03em; }
+h1 { margin: 0.25rem 0 0.45rem; font-size: 1.8rem; }
+h2 { margin: 0.2rem 0 0.35rem; font-size: 1.55rem; }
+.lead, .hint { margin: 0; color: var(--muted); line-height: 1.45; }
+.hint { margin-top: 0.8rem; font-size: 0.82rem; }
+
+#list { list-style: none; margin: 0.9rem 0 0; padding: 0; display: grid; gap: 0.35rem; }
+#list button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+#list button strong { font-weight: 600; }
+#list button span { color: var(--muted); font-variant-numeric: tabular-nums; }
+#list button[aria-current="true"] { background: var(--water); color: var(--paper); border-color: var(--water); }
+#list button[aria-current="true"] span { color: rgba(243, 239, 230, 0.75); }
+
+.card {
+  position: fixed;
+  z-index: 2;
+  right: 14px;
+  bottom: 36px;
+  width: min(280px, calc(100vw - 28px));
+  background: var(--water);
+  color: var(--paper);
+  padding: 1rem 1rem 0.9rem;
+}
+.card .kicker { color: rgba(243, 239, 230, 0.65); }
+.card p { margin: 0; }
+.card button {
+  margin-top: 0.8rem;
+  background: transparent;
+  color: inherit;
+  border: 1px solid rgba(243, 239, 230, 0.4);
+  font: inherit;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.maplibregl-ctrl-attrib { font-size: 11px; }
+@media (max-width: 720px) {
+  .panel {
+    top: auto;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-height: 32vh;
+  }
+  .card {
+    top: 12px;
+    bottom: auto;
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+}
